@@ -1,0 +1,16 @@
+.lectures-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  align-content: center;
+  border: 1px solid black;
+
+  &__list {
+    border-right: 1px solid black;
+    padding: 0 30px 0 0;
+  }
+
+  &__details {
+    padding: 0 0 0 30px;
+  }
+}

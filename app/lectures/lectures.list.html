@@ -1,0 +1,14 @@
+<div class="lectures-wrapper">
+    <div class="lectures-wrapper__list">
+        <ul>
+            <h1>LECTURES LIST</h1>
+            <li ng-repeat="lecture in lectureCtrl.lecturesList">
+                <a href="#" ng-click="lectureCtrl.navigateToDetails(
+                lecture.id)">{{ lecture.name }}</a>
+            </li>
+        </ul>
+    </div>
+    <div ui-view="details" class="lectures-wrapper__details">
+        <h3>Select any lecture from the list</h3>
+    </div>
+</div>
